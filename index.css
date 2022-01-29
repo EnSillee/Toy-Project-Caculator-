@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  box-sizing: border-box;
+  font-family: "MesloLGS NF", cursive;
+  color: whitesmoke;
+}
+
+body {
+  background-image: url("water.png");
+  background-size: cover;
+}
+
+.큰테두리 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.계산기 {
+  background-color: #513a3f;
+  width: 330px;
+  height: 500px;
+  border-radius: 50px;
+  padding: 25px 20px;
+  border: solid 6px #ef7993;
+  border-bottom: solid 6px #d27082;
+}
+
+.계산기_출력창 {
+  background-color: #624b4b;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: right;
+  vertical-align: middle;
+  padding: 25px 15px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.계산기_버튼 {
+  background-color: lightgrey;
+  width: 100%;
+  height: 330px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.초기화_양수음수_나머지_계산 {
+  height: 50px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: lightgrey;
+}
+
+.초기화_양수음수_나머지_계산 > button {
+  border-radius: 10px;
+  width: 21%;
+  height: 48px;
+  background-color: #0f4b35;
+  cursor: pointer;
+  outline: none;
+  border-bottom: 3px solid #d27082;
+}
+
+.버튼열 {
+  height: 50px;
+  width: 200%;
+  margin: 10px;
+}
+
+.버튼열 > button {
+  width: 10%;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  background-color: gray;
+}
+
+.버튼열 > .연산자 {
+  color: #ffffff;
+  background-color: orange;
+}
+
+.버튼열 > .영 {
+  width: 22%;
+}
+
+.logo {
+  position: fixed;
+  padding: 30px;
+  bottom: 75px;
+  right: 110px;
+  width: 150px;
+}
