@@ -34,7 +34,7 @@ body {
   height: 100px;
   width: 100%;
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 3rem;
   text-align: right;
   vertical-align: middle;
   padding: 25px 15px;
@@ -61,12 +61,13 @@ body {
 
 .초기화_양수음수_나머지_계산 > button {
   border-radius: 10px;
-  width: 21%;
+  width: 20.9%;
   height: 48px;
   background-color: #0f4b35;
   cursor: pointer;
   outline: none;
   border-bottom: 3px solid #d27082;
+  font-size: 1.5rem;
 }
 
 .버튼열 {
@@ -77,16 +78,18 @@ body {
 
 .버튼열 > button {
   width: 10%;
-  height: 40px;
+  height: 50px;
   border-radius: 10px;
   cursor: pointer;
   outline: none;
   background-color: gray;
+  font-size: 2rem;
 }
 
 .버튼열 > .연산자 {
   color: #ffffff;
   background-color: orange;
+  font-size: 2rem;
 }
 
 .버튼열 > .영 {
@@ -96,9 +99,9 @@ body {
 .logo {
   position: fixed;
   padding: 30px;
-  bottom: 75px;
+  bottom: 5px;
   right: 110px;
-  width: 150px;
+  width: 100px;
 }
 
 .버튼열 > .isPressed {

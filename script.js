@@ -65,6 +65,7 @@ function calculate(n1, 연산자, n2){
 
         operator = 누른곳내용
         firstNum = display.textContent
+        previousNum = ''
         previousKey = ''
     }
 
