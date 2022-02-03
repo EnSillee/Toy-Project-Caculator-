@@ -21,8 +21,8 @@ body {
 
 .계산기 {
   background-color: #513a3f;
-  width: 330px;
-  height: 500px;
+  width: 350px;
+  height: 550px;
   border-radius: 50px;
   padding: 25px 20px;
   border: solid 6px #ef7993;
@@ -31,13 +31,13 @@ body {
 
 .계산기_출력창 {
   background-color: #624b4b;
-  height: 100px;
+  height: 145px;
   width: 100%;
   border-radius: 10px;
   font-size: 3rem;
   text-align: right;
   vertical-align: middle;
-  padding: 25px 15px;
+  padding: 15px 15px 25px 15px;
   overflow: hidden;
   overflow-wrap: break-word;
 }
@@ -67,7 +67,7 @@ body {
   cursor: pointer;
   outline: none;
   border-bottom: 3px solid #d27082;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .버튼열 {
@@ -83,13 +83,13 @@ body {
   cursor: pointer;
   outline: none;
   background-color: gray;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .버튼열 > .연산자 {
   color: #ffffff;
   background-color: orange;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .버튼열 > .영 {

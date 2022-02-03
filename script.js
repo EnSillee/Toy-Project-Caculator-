@@ -1,5 +1,5 @@
 let display = document.querySelector('.계산기_출력창')
-let firstNum = '', operator, previousKey, previousNum = '', pressInformation, isPlus;
+let firstNum = '', operator, previousKey, previousNum = '', pressInformation, isPlus, isZero = 0;
 let 버튼불러오기 = document.querySelector('.계산기_버튼')
 
 function calculate(n1, 연산자, n2){
@@ -10,7 +10,7 @@ function calculate(n1, 연산자, n2){
   if(연산자 === '-'){
     result = Number(n1) - Number(n2)
   }  
-  if(연산자 === 'x'){
+  if(연산자 === '×'){
     result = Number(n1) * Number(n2)
   }
   if(연산자 === '÷'){
@@ -24,10 +24,12 @@ function calculate(n1, 연산자, n2){
 
     const 누른곳html = ev.target;
     const 누른곳클래스정보 = 누른곳html.classList[0]
+    const 누른곳클래스정보2 = 누른곳html.classList[1]
     const 누른곳내용 = 누른곳html.textContent;
 
 //    console.log(누른곳html)
-//    console.log(누른곳클래스정보)
+// console.log(누른곳클래스정보)
+//    console.log(누른곳클래스정보2)
 //    console.log(누른곳내용)
 
    if(누른곳html.matches('button')){
@@ -35,12 +37,24 @@ function calculate(n1, 연산자, n2){
     if(누른곳클래스정보 === '숫자'){
         
         if(operator === undefined){
-            firstNum = firstNum + 누른곳내용
-            display.textContent = firstNum;
+            if(display.textContent === '0'){
+                display.textContent = 누른곳내용
+                firstNum = display.textContent
+            } else if(display.textContent !== '0'){
+                firstNum = firstNum + 누른곳내용
+                display.textContent = firstNum;
+
+            }
+ 
         } else{
             previousNum = previousNum + 누른곳내용
             display.textContent = previousNum
           }
+
+    //    if(누른곳클래스정보2 === '영'){
+    //        isZero = isZero + 1
+    //    }
+          
     }
 
 
@@ -91,8 +105,8 @@ function calculate(n1, 연산자, n2){
     if(누른곳클래스정보 === '초기화'){
         firstNum = '';
         previousNum = '';
-        previousKey =  undefined;
         operator = undefined;
+        isZero = 0;
         if(pressInformation !== undefined){
         pressInformation.classList.remove('isPressed')
         }
